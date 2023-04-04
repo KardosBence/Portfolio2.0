@@ -1,10 +1,30 @@
 /*OldalBeállítások*/
 /*Fontok*/
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Merriweather+Sans:wght@700&display=swap');
 /*font-family: 'Alkatra', cursive;
 font-family: 'Merriweather Sans', sans-serif;*/
 /*Fontok*/
+/*Reszponzivitás*/
 
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 75%
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 100%
+    }
+}
+
+/*Reszponzivitás*/
 /*OldalBeállítások*/
 
 /*Navbar*/
@@ -23,7 +43,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
 #nevem {
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -78,7 +98,6 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 #FoOldal {
     font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 700;
     word-spacing: 0px;
 }
 
@@ -146,17 +165,37 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 /*Főoldal*/
 
+
+
 /*Footer*/
-.FoOldal-footer-also{
-    display:inline;
+.FoOldal-footer {
+    color: white;
+    background-color: black;
 }
-.FoOldal-footer-jobb{
+
+.FoOldal-footer__header {
+    margin-left: 30px;
+}
+
+.FoOldal-footer__rovid-leiras {
+    margin-left: 30px;
+}
+
+.FoOldal-footer-also {
+    display: inline;
+}
+
+.FoOldal-footer-jobb {
     margin-left: auto;
 }
 
+.FoOldal-footer__social a {
+    text-decoration: none;
+}
+
 .FoOldal-footer__icon {
-    width: 50px;
-    margin-inline: 20px;
+    width: 40spx;
+    margin-inline: 15px;
     border-radius: 10%;
     box-shadow: 1px 1px 10px 10px rgb(150, 150, 150);
 }
@@ -166,7 +205,10 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 #mail {
-    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: white;
 }
 
 #mail:visited {
