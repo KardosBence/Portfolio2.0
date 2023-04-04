@@ -1,5 +1,8 @@
-const aktYear = new Date().getFullYear();
-aktYear.innerHTML = aktYear;
+var aktYear = new Date().getFullYear();
+var aktYearElem = document.getElementById("aktYear");
+aktYearElem.innerHTML = aktYear;
+
+
 /*let aktDatum: string = formatDate(new Date());
 
 function padTo2Digits(num: number) {
