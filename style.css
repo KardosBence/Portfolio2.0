@@ -41,12 +41,20 @@ font-family: 'Merriweather Sans', sans-serif;*/
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     html {
         font-size: 65%;
     }
     #back-to-top{
         width: 65px;
+    }
+    .ham{
+        width: 65px;
+    }
+    .navbar-button{
+        display: contents;
+        margin: auto;
+        justify-content: end;
     }
 }
 
@@ -56,6 +64,17 @@ font-family: 'Merriweather Sans', sans-serif;*/
     }
     #back-to-top{
         width: 55px;
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .ham{
+        width: 40px;
+    }
+    .navbar-button{
+        display: contents;
+        margin: auto;
+        justify-content: end;
     }
 }
 
