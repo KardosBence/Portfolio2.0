@@ -46,3 +46,6 @@ function KoszontesBeallitas() {
     koszontesElem.innerHTML = koszontes;
 }
 setInterval(KoszontesBeallitas, 1000);
+document.querySelector('.navbar-button').addEventListener('click', function () {
+    document.querySelector('.animated-icon').classList.toggle('open');
+});
