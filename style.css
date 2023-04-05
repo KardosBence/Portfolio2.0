@@ -21,13 +21,15 @@ font-family: 'Merriweather Sans', sans-serif;*/
 #back-to-top:hover {
     background-color: #b6b6b6c7;
 }
+
 /*GombokEnd*/
 /*Reszponzivitás*/
 @media screen and (max-width: 1800px) {
     html {
         font-size: 100%;
     }
-    #back-to-top{
+
+    #back-to-top {
         width: 100px;
     }
 }
@@ -36,7 +38,8 @@ font-family: 'Merriweather Sans', sans-serif;*/
     html {
         font-size: 75%;
     }
-    #back-to-top{
+
+    #back-to-top {
         width: 75px;
     }
 }
@@ -45,16 +48,44 @@ font-family: 'Merriweather Sans', sans-serif;*/
     html {
         font-size: 65%;
     }
-    #back-to-top{
+
+    #back-to-top {
         width: 65px;
     }
-    .ham{
-        width: 65px;
+
+    .ham {
+        width: 40px;
+        justify-items: end;
     }
-    .navbar-button{
+
+    .navbar-button {
         display: contents;
         margin: auto;
         justify-content: end;
+    }
+
+    #nevem {
+        width: 10px;
+    }
+
+    .navbar-logo {
+        width: 40px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .navbar-nav .nav-link {
+        display: inline-block;
+        margin: 5px;
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.150);
+    }
+    .FoOldal__mouse-scroll-cont {
+        display: none
     }
 }
 
@@ -62,19 +93,21 @@ font-family: 'Merriweather Sans', sans-serif;*/
     html {
         font-size: 55%;
     }
-    #back-to-top{
+
+    #back-to-top {
         width: 55px;
     }
-    
+
 }
+
 @media only screen and (max-width: 400px) {
-    .ham{
+    .ham {
         width: 40px;
     }
-    .navbar-button{
+
+    .navbar-button {
         display: contents;
         margin: auto;
-        justify-content: end;
     }
 }
 
@@ -96,65 +129,71 @@ font-family: 'Merriweather Sans', sans-serif;*/
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  .hamRotate.active {
+}
+
+.hamRotate.active {
     transform: rotate(45deg);
-  }
-  .hamRotate180.active {
+}
+
+.hamRotate180.active {
     transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
+}
+
+.line {
+    fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width:5.5;
-    stroke-linecap:round;
-  }
-  .ham .top {
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham .top {
     stroke-dasharray: 40 130;
-  }
-  .ham .middle {
+}
+
+.ham .middle {
     stroke-dasharray: 40 140;
-  }
-  .ham .bottom {
+}
+
+.ham .bottom {
     stroke-dasharray: 40 205;
-  }
-  .ham.active .top {
+}
+
+.ham.active .top {
     stroke-dasharray: 75 130;
     stroke-dashoffset: -63px;
-  }
-  .ham.active .middle {
+}
+
+.ham.active .middle {
     stroke-dashoffset: -102px;
-  }
-  .ham.active .bottom {
+}
+
+.ham.active .bottom {
     stroke-dasharray: 110 205;
     stroke-dashoffset: -86px;
-  }
-.navbar-logo {
+}
+
+.nav-logo {
     pointer-events: none;
     margin: 20px;
     margin-right: 35px;
-    max-width: 75px;
+    width: 75px;
     box-shadow: 5px 5px 10px rgb(119, 119, 119);
     border-radius: 8%;
 }
 
 #nevem {
-    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.navbar-nav {
-    
-}
+.navbar-nav {}
 
 .nav-link {
     margin-inline: 30px;
-    font-size: 18px;
     text-transform: uppercase;
-    font-weight: 1000;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -235,12 +274,6 @@ font-family: 'Merriweather Sans', sans-serif;*/
     bottom: 3%;
     left: 50%;
     transform: translateX(-50%)
-}
-
-@media only screen and (max-width: 600px) {
-    .FoOldal__mouse-scroll-cont {
-        display: none
-    }
 }
 
 .mouse {
