@@ -21,7 +21,8 @@ font-family: 'Merriweather Sans', sans-serif;*/
 #back-to-top:hover {
     background-color: #b6b6b6c7;
 }
-.btn{
+
+.btn {
     width: 8rem;
     height: 4rem;
 }
@@ -88,6 +89,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.150);
     }
+
     .FoOldal__mouse-scroll-cont {
         display: none
     }
@@ -100,6 +102,20 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
     #back-to-top {
         width: 55px;
+    }
+
+    .FoOldal-header {
+        /*background-color: rgba(0, 0, 0, 0.3);
+        color: rgb(59, 59, 59);
+        border: 3px solid #666666;
+        border-radius: 10px;*/
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        padding: 20px;
+        text-align: center;
     }
 
 }
@@ -187,14 +203,13 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 #nevem {
+    cursor: default;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.navbar-nav {
-
-}
+.navbar-nav {}
 
 .nav-link {
     margin-inline: 30px;
@@ -235,12 +250,13 @@ font-family: 'Merriweather Sans', sans-serif;*/
     -moz-filter: blur(2px);
     width: 1px fit-content;
     height: 1000px;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #FoOldal {
+    cursor: default;
     font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.200);
@@ -253,17 +269,16 @@ font-family: 'Merriweather Sans', sans-serif;*/
     border: 3px solid #666666;
     border-radius: 10px;*/
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     width: 90%;
     padding: 20px;
     text-align: center;
 }
 
 .FoOldal-header-koszontes {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -278,7 +293,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 .FoOldal__mouse-scroll-cont {
     position: absolute;
-    bottom: 3%;
+    bottom: 3px;
     left: 50%;
     transform: translateX(-50%)
 }
@@ -356,17 +371,22 @@ font-family: 'Merriweather Sans', sans-serif;*/
 /*FőoldalEnd*/
 
 /*RolamStart*/
-.Rolam-header{
+.Rolam{
+}
+.Rolam-header {
+    cursor: default;
     margin-top: 200px;
     text-align: center;
 }
-.Rolam-header-prim{
+
+.Rolam-header-prim {
     font-size: 3rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.Rolam-header-sec{
+
+.Rolam-header-sec {
     margin-top: 50px;
     font-size: 1.5rem;
     letter-spacing: 3.8px;
@@ -374,6 +394,58 @@ font-family: 'Merriweather Sans', sans-serif;*/
     font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
 }
+
+.Rolam-left {
+    cursor: default;
+    margin-left: 20rem;
+}
+
+.Rolam-content-l {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.Rolam-right {
+    cursor: default;
+    margin-left: 10rem;
+}
+
+.Rolam-content-r {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills {
+    cursor:default;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, .2);
+    box-shadow: 0px 4px 1px 5px rgb(134, 134, 134);
+    border-radius: 5px;
+    font-weight: 700;
+    color: #666;
+}
+
+.skills:hover {
+    animation: SkillsFadeIn 0.5s forwards;
+}
+
+@keyframes SkillsFadeIn {
+    from {
+        color: #666;
+        background: rgba(153, 153, 153, .2);
+        box-shadow: 0px 4px 1px 5px rgb(134, 134, 134);
+    }
+
+    to {
+        background: rgba(153, 153, 153, 0.582);
+        box-shadow: 0px 4px 1px 5px rgb(211, 211, 211);
+        color: black;
+    }
+}
+
 /*RolamEnd*/
 
 /*FooterStart*/
@@ -416,11 +488,6 @@ font-family: 'Merriweather Sans', sans-serif;*/
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 3px;
-    color: white;
-}
-
-#mail:visited {
-    color: blue;
 }
 
 /*FooterEnd*/
