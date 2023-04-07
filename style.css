@@ -271,9 +271,8 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 .FoOldal-content {
     margin-top: 50px;
-    font-size: 2rem;
-    letter-spacing: 3.8px;
-    font-variant: small-caps;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
     text-transform: capitalize;
 }
 
@@ -369,9 +368,8 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 .Rolam-header-sec{
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 3.8px;
-    font-variant: small-caps;
     text-transform: capitalize;
     font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
