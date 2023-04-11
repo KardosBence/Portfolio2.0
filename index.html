@@ -173,16 +173,11 @@
                     <h2 class="Kapcsolat-header">
                         <div class="Kapcsolat-header-prim mb-5">Lépj kapcsolatba velem!</div>
                     </h2>
-                    <form class="Kapcsolat-form" method="post" action="contact.php">
+                    <form class="Kapcsolat-form" method="POST" action="contact.php">
                         <div class="mb-5">
                             <label for="email" class="form-label">Email cím</label>
                             <input type="email" class="form-control" id="email"
                                 placeholder="name@example.com">
-                        </div>
-                        <div class="mb-5">
-                            <label for="name" class="form-label">Név</label>
-                            <input type="text" class="form-control" id="name"
-                                placeholder="Példa Géza">
                         </div>
                         <div class="mb-5">
                             <label for="targy" class="form-label">Üzenet tárgya</label>
@@ -193,7 +188,7 @@
                             <label for="uzenet" class="form-label">Üzenet</label>
                             <textarea class="form-control" id="uzenet" rows="15"></textarea>
                         </div>
-                        <button class="btn btn-success m-auto">Elküldöm</button>
+                        <button class="btn btn-success m-auto" name="submit">Elküldöm</button>
                     </form>
                 </div>
             </div>
