@@ -220,7 +220,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
     letter-spacing: 2px;
 }
 
-.active {
+nav a.active {
     color: rgb(0, 218, 0) !important;
     animation: NavActFadIn 0.4s forwards;
 }
@@ -383,7 +383,12 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 /*RolamStart*/
 
-#Rolam {}
+#Rolam {
+    cursor: default;
+    word-spacing: 1px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.200);
+    box-shadow: 1px 1px 50px 20px rgb(168, 168, 168);
+}
 
 .Rolam-header {
     cursor: default;
@@ -421,6 +426,11 @@ font-family: 'Merriweather Sans', sans-serif;*/
     text-decoration: none;
     color: black;
     border-bottom: 3px solid black;
+}
+
+.Rolam-content-l p {
+    text-indent: 30px;
+    margin-bottom: 20px;
 }
 
 .Rolam-right {
