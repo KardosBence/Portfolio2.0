@@ -23,8 +23,10 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 .btn {
-    width: 8rem;
-    height: 4rem;
+    margin-top: 4rem;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*GombokEnd*/
@@ -199,7 +201,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
     margin-right: 35px;
     width: 5rem;
     box-shadow: 5px 5px 10px rgb(119, 119, 119);
-    border-radius: 8%;
+    border-radius: 10px;
 }
 
 #nevem {
@@ -218,18 +220,27 @@ font-family: 'Merriweather Sans', sans-serif;*/
     letter-spacing: 2px;
 }
 
+.active {
+    color: rgb(0, 218, 0) !important;
+    animation: NavActFadIn 0.4s forwards;
+}
+
+@keyframes NavActFadIn {
+    0% {
+        border-bottom: 0px solid #000;
+    }
+
+    100% {
+        border-bottom: 1px solid #000;
+    }
+}
+
 .nav-link:hover {
     color: rgba(0, 218, 0, 0.534);
-    animation: NavBtnfadeIn 0.8s forwards;
+    animation: NavBtnClrHov 0.4s forwards;
 }
 
-/*
-#aktDatum{
-    animation: fadeIn 3s forwards;
-}
-*/
-
-@keyframes NavBtnfadeIn {
+@keyframes NavBtnClrHov {
     from {
         color: rgba(0, 0, 0, 0.65);
     }
@@ -243,7 +254,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 /*FőoldalStart*/
 
-.bg {
+.FoOldal-bg {
     background-image: url("src/bg2.png");
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -269,7 +280,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
     border: 3px solid #666666;
     border-radius: 10px;*/
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -293,7 +304,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
 
 .FoOldal__mouse-scroll-cont {
     position: absolute;
-    bottom: 3px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%)
 }
@@ -371,11 +382,12 @@ font-family: 'Merriweather Sans', sans-serif;*/
 /*FőoldalEnd*/
 
 /*RolamStart*/
-.Rolam{
-}
+
+#Rolam {}
+
 .Rolam-header {
     cursor: default;
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -401,8 +413,14 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 .Rolam-content-l {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
+}
+
+.Rolam-content-l a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid black;
 }
 
 .Rolam-right {
@@ -416,7 +434,7 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 .skills {
-    cursor:default;
+    cursor: default;
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 2rem;
@@ -447,6 +465,33 @@ font-family: 'Merriweather Sans', sans-serif;*/
 }
 
 /*RolamEnd*/
+
+/*ProjektekStart*/
+#Projektek {}
+
+.Projektek-header {
+    cursor: default;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.Projektek-header-prim {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.Projektek-header-sec {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    letter-spacing: 3.8px;
+    text-transform: capitalize;
+    font-family: 'Merriweather Sans', sans-serif;
+    word-spacing: 0px;
+}
+
+/*ProjektekStart*/
 
 /*FooterStart*/
 .FoOldal-footer {

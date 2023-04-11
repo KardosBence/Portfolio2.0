@@ -14,7 +14,7 @@
 
 <body>
     <img id="back-to-top" href="#" src="src/backtotop.png">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="nav_logo-container d-flex justify-content-end">
             <img class="nav-logo" src="src/logo2.jpg">
             <span id="nevem" class="m-auto">kardos bence</span>
@@ -23,10 +23,10 @@
         <div class="d-flex ms-auto">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" aria-current="page" href="#FoOldal">Főoldal</a>
+                    <a class="nav-link" aria-current="page" href="#">Főoldal</a>
                     <a class="nav-link" aria-current="page" href="#Rolam">Rólam</a>
                     <a class="nav-link" aria-current="page" href="#Projektek">Projektek</a>
-                    <a class="nav-link disabled" aria-current="page" href="#kapcsolat">Kapcsolat</a>
+                    <a class="nav-link disabled" aria-current="page" href="#Kapcsolat">Kapcsolat</a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
         </button>
     </nav>
     <section id="FoOldal">
-        <div class="bg"></div>
+        <div class="FoOldal-bg"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -53,12 +53,10 @@
                     <div class="FoOldal-header">
                         <div id="koszontes" class="FoOldal-header-koszontes"></div>
                         <div class="FoOldal-header-koszontes">Kardos Bence vagyok.</div>
-                        <div class="FoOldal-content">Portfóliómban bemutatom készségeimet és projektmunkáimat.
-                        </div>
                         <div class="FoOldal-content">"A frontend fejlesztőknek nagy hangsúlyt kell helyezniük a designra
                             és az esztétikára. Az oldalaknak jól kell
                             kinézniük, egyszerűeknek és könnyen átláthatóknak kell lenniük."</div>
-                        <button class="btn btn-success my-5">Projektek</button>
+                        <button class="btn btn-success my-5" onclick="location.href='#Projektek';">Projektek</button>
                     </div>
                     <div class="FoOldal__mouse-scroll-cont">
                         <div class="mouse"></div>
@@ -91,6 +89,7 @@
             </div>
     </section>
     <section id="Rolam">
+        <div class="Rolam-bg"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -103,18 +102,24 @@
             <div class="row mt-2 mb-3">
                 <div class="col-4 Rolam-left">
                     <div class="Rolam-header-sec fs-3 mb-4">Ismerj Meg!</div>
-                    <div class="Rolam-content-l mt-3">Frontend webfejlesztő vagyok, és a webhelyek és webalkalmazások
-                        kezelőfelületét
-                        építem fel, amely a teljes termék sikeréhez vezet. Tekintse meg munkáimat a Projektek részben.
-
-                        Szeretek olyan tartalmakat is megosztani, amelyek az évek során a webfejlesztésben tanult
-                        dolgokkal kapcsolatosak, így segíthetnek másoknak a fejlesztői közösségben. Nyugodtan
-                        csatlakozzon vagy kövessen a Linkedin oldalamon, ahol hasznos tartalmakat teszek közzé a
-                        webfejlesztéssel és programozással kapcsolatban
-
-                        Nyitott vagyok az álláslehetőségekre, ahol hozzájárulhatok, tanulhatok és fejlődhetek. Ha olyan
-                        jó lehetőség adódik, amely megfelel a képességeimnek és tapasztalatomnak, ne habozzon
-                        kapcsolatba lépni velem.</div>
+                    <div class="Rolam-content-l mt-3">Tanulmányaimat március végén fejeztem be, szeptemberben várható az
+                        állami vizsga így frontend fejlesztőként, tapasztalat szerzés és fejlődés céljából szeretnék
+                        addig is elhelyezkedni. Az iskolában számos
+                        nyelvet és technológiát tanultam, melyeket a <b>Készségeim</b> részben részleteztem.
+                        Kommunikációs készségemet előző munkahelyeim által fejleszteni tudtam, amely fontos a
+                        csapatban való hatékony együttműködéshez. Az egyik
+                        legérdekesebb projektem az volt, hogy létrehoztam egy egyszerű weboldalt, amely a <b><a
+                            href="https://hu.wikipedia.org/wiki/Rick_%C3%A9s_Morty" target="_blank">Rick és
+                            Morty</a></b> című televíziós sorozat összes karakterét, epizódját és helyszínét megjeleníti
+                        <b>AJAX</b> hívás által. A projekt
+                        során számos kihívással kellett
+                        szembenéznem, de az eredmény egy igényes, hasznos és felhasználóbarát weboldal lett. Szeretnék
+                        folyamatosan tanulni és fejlődni, és célom az, hogy valódi értéket teremtsek a frontend
+                        fejlesztés területén későbbiekben Senior fejlesztőként. <b><a
+                                href="#Projektek">Projektek</a></b> résznél
+                        megtalálhatóak korábbi munkáim. 
+                        <div class="mt-5 text-center"><i>Köszönöm, hogy megnézted a portfóliómat!</i></div>
+                    </div>
                 </div>
                 <div class="col-4 Rolam-right">
                     <div class="Rolam-header-sec fs-3 ms-auto mb-4">Készségeim:</div>
@@ -142,7 +147,7 @@
                 <div class="col-12">
                     <h2 class="Projektek-header">
                         <div class="Projektek-header-prim">Projektek</div>
-                        <div class="Projektek-header-sec">Itt további információkat találsz a Projektjeimről</div>
+                        <div class="Projektek-header-sec">Itt további információkat találsz Projektjeimről</div>
                     </h2>
                 </div>
             </div>
@@ -195,6 +200,7 @@
             </div>
         </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
