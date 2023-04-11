@@ -26,7 +26,7 @@
                     <a class="nav-link" aria-current="page" href="#FoOldal">Főoldal</a>
                     <a class="nav-link" aria-current="page" href="#Rolam">Rólam</a>
                     <a class="nav-link" aria-current="page" href="#Projektek">Projektek</a>
-                    <a class="nav-link disabled" aria-current="page" href="#Kapcsolat">Kapcsolat</a>
+                    <a class="nav-link" aria-current="page" href="#Kapcsolat">Kapcsolat</a>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
                     <div class="FoOldal-header">
                         <div id="koszontes" class="FoOldal-header-koszontes"></div>
                         <div class="FoOldal-header-koszontes">Kardos Bence vagyok.</div>
-                        <div class="FoOldal-content">"A frontend fejlesztőknek nagy hangsúlyt kell helyezniük a designra
+                        <div class="FoOldal-content">"A frontend fejlesztőknek nagy hangsúlyt kell helyezniük a dizájnra
                             és az esztétikára. Az oldalaknak jól kell
                             kinézniük, egyszerűeknek és könnyen átláthatóknak kell lenniük."</div>
                         <button class="btn btn-success my-5" onclick="location.href='#Projektek';">Projektek</button>
@@ -89,7 +89,6 @@
             </div>
     </section>
     <section id="Rolam">
-        <div class="Rolam-bg"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -99,7 +98,7 @@
                     </h2>
                 </div>
             </div>
-            <div class="row mt-2 mb-3">
+            <div class="row mt-2 mb-5">
                 <div class="col-4 Rolam-left">
                     <div class="Rolam-header-sec fs-3 mb-4">Ismerj Meg!</div>
                     <div class="Rolam-content-l mt-3">
@@ -158,7 +157,40 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-6">
 
+                </div>
+                <div class="col-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Kapcsolat">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 w-25 m-auto mb-5">
+                    <h2 class="Kapcsolat-header">
+                        <div class="Kapcsolat-header-prim mb-5">Lépj kapcsolatba velem!</div>
+                    </h2>
+                    <form class="Kapcsolat-form" method="post" action="contact.php">
+                        <div class="mb-5">
+                            <label for="email" class="form-label">Email cím</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-5">
+                            <label for="targy" class="form-label">Üzenet tárgya</label>
+                            <input type="text" class="form-control" id="targy"
+                                placeholder="Például: Álláslehetőség">
+                        </div>
+                        <div class="mb-5">
+                            <label for="uzenet" class="form-label">Üzenet</label>
+                            <textarea class="form-control" id="uzenet" rows="15"></textarea>
+                        </div>
+                        <button class="btn btn-success m-auto">Elküldöm</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

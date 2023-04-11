@@ -211,8 +211,6 @@ font-family: 'Merriweather Sans', sans-serif;*/
     letter-spacing: 2px;
 }
 
-.navbar-nav {}
-
 .nav-link {
     margin-inline: 30px;
     text-transform: uppercase;
@@ -384,6 +382,7 @@ nav a.active {
 /*RolamStart*/
 
 #Rolam {
+    background-color: #f1f1f1;
     cursor: default;
     word-spacing: 1px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.200);
@@ -477,11 +476,17 @@ nav a.active {
 /*RolamEnd*/
 
 /*ProjektekStart*/
-#Projektek {}
+#Projektek {
+    background-color: #f1f1f1;
+    cursor: default;
+    word-spacing: 1px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.200);
+    box-shadow: 1px 1px 50px 20px rgb(168, 168, 168);
+}
 
 .Projektek-header {
     cursor: default;
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -502,6 +507,24 @@ nav a.active {
 }
 
 /*ProjektekStart*/
+
+/*ProjektekEnd*/
+
+
+/*KapcsolatStart*/
+#Kapcsolat{
+    background-color: #f1f1f1;
+    cursor: default;
+    word-spacing: 1px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.200);
+    box-shadow: 1px 1px 50px 20px rgb(168, 168, 168);
+}
+.Kapcsolat-header{
+    cursor: default;
+    margin-top: 150px;
+    text-align: center;
+}
+/*KapcsolatEnd*/
 
 /*FooterStart*/
 .FoOldal-footer {
