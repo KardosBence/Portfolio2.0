@@ -5,12 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit;
 }
 if (isset($_POST['submit'])) {
-    $to = "kardbence@gmail.com"; // az e-mail cím, ahova az üzenetet küldeni szeretnéd
-    $from = $_POST['email']; // a felhasználó által megadott email cím
-    $targy = $_POST['targy']; // a felhasználó által megadott üzenet tárgya
-    $uzenet = $_POST['uzenet']; // a felhasználó által megadott üzenet
+    $to = "kardbence@gmail.com";
+    $from = $_POST['email'];
+    $targy = $_POST['targy'];
+    $uzenet = $_POST['uzenet'];
 
-    // az email üzenet formátuma
     $message = "
     <html>
     <head>
@@ -24,12 +23,10 @@ if (isset($_POST['submit'])) {
     </html>
     ";
 
-    // Az email fejléce
     $headers = "From: " . $from . "\r\n";
     $headers .= "Reply-To: " . $from . "\r\n";
     $headers .= "Content-type: text/html\r\n";
 
-    // Elküldi az e-mailt
     mail($to, $targy, $message, $headers);
     echo "Az üzenet sikeresen elküldve.";
 }
