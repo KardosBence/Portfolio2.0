@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="row mt-2 mb-5">
-                <div class="col-4 Rolam-left">
+                <div class="col-4 Rolam-left m-auto">
                     <div class="Rolam-header-sec fs-3 mb-4">Ismerj Meg!</div>
                     <div class="Rolam-content-l mt-3">
                         <p>Tanulmányaimat március végén fejeztem be <b>93%</b>-os
@@ -110,7 +110,7 @@
                             szeretnék
                             addig is elhelyezkedni.</p>
                         <p>Az iskolában számos
-                            nyelvet és technológiát tanultam, melyeket a <b>Készségeim</b> részben részleteztem.
+                            nyelvet és technológiát tanultam, melyeket a <b>"Készségeim"</b> részben részleteztem.
                             Előző munkahelyeimen szerzett tapasztalataim segítségével hatékonyabb kommunikációs
                             készségeket fejlesztettem ki, amelyek a csapatban való eredményesebb együttműködéshez
                             elengedhetetlenek.</p>
@@ -128,7 +128,7 @@
                         <div class="mt-5 text-center"><i>Köszönöm, hogy megnézted a portfóliómat!</i></div>
                     </div>
                 </div>
-                <div class="col-4 Rolam-right">
+                <div class="col-4 Rolam-right m-auto">
                     <div class="Rolam-header-sec fs-3 ms-auto mb-4">Készségeim:</div>
                     <div class="Rolam-content-r">
                         <div class="skills">HTML</div>
@@ -141,7 +141,7 @@
                         <div class="skills">Reszponzív Dizájn</div>
                         <div class="skills">Angular</div>
                         <div class="skills">MongoDB</div>
-                        <div class="skills">Alap MySQL</div>
+                        <div class="skills">Alap MYSQL</div>
                         <div class="skills">Alap MSSQL</div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
         </div>
     </section>
     <section id="Projektek">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="Projektek-header">
@@ -158,14 +158,106 @@
                     </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-
+            <div class="Projekt row mt-5">
+                <div class="Projekt-Img col-5 my-auto text-center">
+                    <a href="https://kardosbence.github.io/Rick-Morty/" target="_blank"><img class="img-fluid"
+                            src="./src/RickAndMortyImg.png" alt="Rick_And_Morty_Img"></a>
                 </div>
-                <div class="col-6">
+                <div class="Projekt-Leiras col-6 ms-auto">
+                    <h2 class="m-auto">
+                        <div class="Projekt-Header my-3">Rick & Morty</div>
+                        <div class="Projekt-Content my-4 lh-base">
+                            <p>A "Rick and Morty" című animációs sorozatot mutatja be. Az oldal egy áttekintést ad a
+                                sorozat
+                                főbb karaktereiről, epizódjairól és helyszíneiről.</p>
 
+                            <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és <b>JavaScript</b>
+                                nyelveket használtam. Az
+                                adatok
+                                <b>AJAX hívás</b>-on keresztül érkeznek az oldalra, a weboldal aszinkron módon
+                                kommunikál a
+                                szerverrel.
+                                A weboldal interaktív és modern megjelenést mutat, amely könnyen navigálható és
+                                áttekinthető.
+                            </p>
+
+                            <p>Az oldal főbb tartalmai között szerepelnek az animációs sorozat főbb karakterei, a
+                                karakterek rövid leírása, az epizódok listája és azok rövid összefoglalói, valamint azok
+                                helyszínei. Az oldal a sorozat kedvelői számára készült, akik további információkat
+                                szeretnének megtudni a sorozatról, valamint új nézőknek is segítséget nyújt az
+                                induláshoz.</p>
+                        </div>
+                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block w-25"
+                            onclick="window.open('https://kardosbence.github.io/Rick-Morty/', '_blank')" type="button">
+                            Megnézem</div>
+                    </h2>
                 </div>
             </div>
+            <hr class="border border-dark border-3 opacity-25 my-5">
+            <div class="Projekt row mt-5">
+                <div class="Projekt-Img col-5 my-auto text-center">
+                    <a href="https://kardosbence.github.io/Login-Register/" target="_blank"><img class="img-fluid"
+                            src="./src/Login-Register.png" alt="Login_Register_Img"></a>
+                </div>
+                <div class="Projekt-Leiras col-6 ms-auto">
+                    <h2 class="m-auto">
+                        <div class="Projekt-Header my-3">Log-in | Register</div>
+                        <div class="Projekt-Content my-4 lh-base">
+                            <p>Egy fiktív cég bejelentkező és regisztrációs űrlapját tartalmazó weboldal.</p>
+
+                            <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és <b>JavaScript</b>
+                                nyelveket használtam. Az oldalon lévő űrlapok beviteli mezőinek validációja a saját
+                                JavaScript kód segítségével
+                                történik. A kód ellenőrzi <b>REGEX</b> segítségével, hogy az összes szükséges mezőt
+                                kitöltötték-e, valamint
+                                ellenőrzi, hogy az email cím megfelelő formátumú-e. Ha bármelyik mező érvénytelen, akkor
+                                megjelenik egy hibaüzenet.</p>
+                            <p class="text-center fs-5">Az oldal felépítése egyszerű, a felhasználói felület
+                                minimalista.</p>
+                            <ul>
+                                <li>
+                                    A HTML kódban találhatók a form elemek, az űrlapok, az
+                                    űrlap beviteli mezői és a gombok.
+                                </li>
+                                <li>
+                                    A CSS kód felelős az elrendezésért és a stílusért,
+                                    beleértve a háttérképet, a betűtípust és a színösszeállításokat.
+                                </li>
+                                <li>
+                                    A JavaScript kód a
+                                    validációért és az űrlap adatok szervernek való továbbításáért felelős.
+                                </li>
+                            </ul>
+
+                            <p>Összességében egy egyszerű, ám funkcionális weboldal, amely bemutatja a HTML, CSS és
+                                JavaScript használatát egy egyszerű űrlap készítése során.</p>
+                        </div>
+                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block w-25"
+                            onclick="window.open('https://kardosbence.github.io/Login-Register/', '_blank')"
+                            type="button">
+                            Megnézem</div>
+                    </h2>
+                </div>
+            </div>
+            <hr class="border border-dark border-3 opacity-25 my-5">
+            <!--<div class="Projekt row my-5">
+                <div class="Projekt-Img col-5 my-auto text-center">
+                    <a href="" target="_blank"><img class="img-fluid"
+                            src="" alt=""></a>
+                </div>
+                <div class="Projekt-Leiras col-6 ms-auto">
+                    <h2 class="m-auto">
+                        <div class="Projekt-Header my-3"></div>
+                        <div class="Projekt-Content my-4 lh-base">
+                            
+                        </div>
+                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block w-25"
+                            onclick="window.open('', '_blank')"
+                            type="button">
+                            Megnézem</div>
+                    </h2>
+                </div>
+            </div>-->
         </div>
     </section>
     <section id="Kapcsolat">
@@ -184,9 +276,11 @@
                         id="email">kardbence@gmail.com</a>
                     <label class="form-label" for="tel">Telefonszámom:</label>
                     <a class="form-control-plaintext" href="tel:+36302728033" id="tel">+36-30-272-8033</a>
-                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bence-kardos-925132123/">LinkedIn oldalam</a>
+                    <a target="_blank" rel="noreferrer"
+                        href="https://www.linkedin.com/in/bence-kardos-925132123/">LinkedIn oldalam</a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/KardosBence">Github Profilom</a>
-                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/kardbence/">Facebook elérhetőségem</a>
+                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/kardbence/">Facebook
+                        elérhetőségem</a>
                 </div>
                 <div class="col-6">
                     <label for="map">Jelenlegi tartózkodási helyem:</label>
