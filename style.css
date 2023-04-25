@@ -1,6 +1,6 @@
 /*OldalBeállításokStart*/
 /*FontokStart*/
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Merriweather+Sans:wght@700&display=swap');
+
 /*FontokEnd*/
 /*GombokStart*/
 #back-to-top {
@@ -23,121 +23,50 @@
   }
 
 .btn {
-    margin-top: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
     border-radius: 8px;
     text-decoration: none;
     text-align: center;
 }
 
 /*GombokEnd*/
-/*ReszponzivitásStart*/
-@media screen and (max-width: 1800px) {
+/*@MediaBeállításokStart*/
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth
+}
+@media only screen and (max-width: 75em) {
     html {
-        font-size: 100%;
-    }
-
-    #back-to-top {
-        width: 100px;
+        font-size:59%
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 56.25em) {
     html {
-        font-size: 75%;
-    }
-
-    #back-to-top {
-        width: 75px;
+        font-size:56%
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 112.5em) {
     html {
-        font-size: 65%;
-    }
-
-    #back-to-top {
-        width: 65px;
-    }
-
-    .ham {
-        width: 40px;
-        justify-items: end;
-    }
-
-    .navbar-button {
-        display: contents;
-        margin: auto;
-        justify-content: end;
-    }
-
-    #nevem {
-        width: 10px;
-    }
-
-    .navbar-logo {
-        width: 40px;
-    }
-
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
-    .navbar-nav .nav-link {
-        display: inline-block;
-        margin: 5px;
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.150);
-    }
-
-    .FoOldal__mouse-scroll-cont {
-        display: none
+        font-size:65%
     }
 }
-
-@media only screen and (max-width: 450px) {
-    html {
-        font-size: 55%;
-    }
-
-    #back-to-top {
-        width: 55px;
-    }
-
-    .FoOldal-header {
-        /*background-color: rgba(0, 0, 0, 0.3);
-        color: rgb(59, 59, 59);
-        border: 3px solid #666666;
-        border-radius: 10px;*/
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        padding: 20px;
-        text-align: center;
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
-    .ham {
-        width: 40px;
-    }
-
-    .navbar-button {
-        display: contents;
-        margin: auto;
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-header-koszontes {
+        font-size:4.5rem
     }
 }
+/*@MediaBeállításokEnd*/
 
-/*ReszponzivitásEnd*/
 /*OldalBeállításokEnd*/
 
 /*NavbarStart*/
 .navbar {
+    font-size: 1.6rem;
     background-color: white;
     box-shadow: 1px 1px 100px 20px rgb(160, 160, 160);
     font-family: 'Alkatra', cursive;
@@ -205,6 +134,7 @@
 }
 
 #nevem {
+    font-size: 1.8rem;
     cursor: default;
     text-transform: uppercase;
     font-weight: 700;
@@ -266,7 +196,6 @@ nav a.active {
 
 #FoOldal {
     cursor: default;
-    font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.200);
     box-shadow: 1px 1px 50px 20px rgb(168, 168, 168);
@@ -287,62 +216,17 @@ nav a.active {
 }
 
 .FoOldal-header-koszontes {
-    font-size: 44px;
+    font-size: 6rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 .FoOldal-content {
+    font-size: 2.2rem;
     margin-top: 50px;
-    font-size: 1.5rem;
     letter-spacing: 3px;
     text-transform: capitalize;
-}
-
-.FoOldal__mouse-scroll-cont {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%)
-}
-
-.mouse {
-    width: 40px;
-    height: 60px;
-    border: 2px solid #333;
-    border-radius: 60px;
-    position: relative;
-    overflow: hidden
-}
-
-.mouse::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    border-radius: 50%;
-    opacity: 1;
-    animation: wheel 1.3s infinite;
-    -webkit-animation: wheel 1.3s infinite
-}
-
-@keyframes wheel {
-    to {
-        opacity: 0;
-        top: 40px
-    }
-}
-
-@-webkit-keyframes wheel {
-    to {
-        opacity: 0;
-        top: 40px
-    }
 }
 
 .FoOldal-oldalSoc {
@@ -409,18 +293,17 @@ nav a.active {
 }
 
 .Rolam-header-prim {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 .Rolam-header-sec {
+    font-size: 2rem;
     margin-top: 50px;
-    font-size: 1.5rem;
     letter-spacing: 3.8px;
     text-transform: capitalize;
-    font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
 }
 
@@ -429,8 +312,11 @@ nav a.active {
 }
 
 .Rolam-content-l {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-align: justify;
+}
+.Rolam-content-header {
+    font-size: 2.8rem;
 }
 
 .Rolam-content-l a {
@@ -459,11 +345,11 @@ nav a.active {
 }
 
 .skills {
+    font-size: 1.6rem;
     cursor: default;
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
     margin-right: 2rem;
-    font-size: 1rem;
     background: rgb(153, 153, 153, .2);
     box-shadow: 0px 4px 1px 5px rgb(134, 134, 134);
     border-radius: 5px;
@@ -521,18 +407,17 @@ nav a.active {
 }
 
 .Projektek-header-prim {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 .Projektek-header-sec {
+    font-size: 2rem;
     margin-top: 50px;
-    font-size: 1.5rem;
     letter-spacing: 3.8px;
     text-transform: capitalize;
-    font-family: 'Merriweather Sans', sans-serif;
     word-spacing: 0px;
 }
 
@@ -544,15 +429,15 @@ nav a.active {
 }
 
 .Projekt-Header {
+    font-size: 2.8rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
 }
 
 .Projekt-Content {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
 }
 
@@ -567,7 +452,7 @@ nav a.active {
 }
 
 .Projekt-Img:hover {
-    width: 50%;
+    width: 40%;
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 100px;
     box-shadow: 20px 20px 20px 20px black;
@@ -585,9 +470,9 @@ nav a.active {
 }
 
 .Kapcsolat-header {
+    font-size: 4rem;
     cursor: default;
     margin-top: 150px;
-    text-align: center;
 }
 
 /*KapcsolatEnd*/
