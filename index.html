@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="Ez az oldal Kardos Bence portólióját mutatja be.">
     <title>Kardos Bence | Junior Frontend Fejlesztő | Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -16,10 +15,10 @@
 
 <body>
     <img id="back-to-top" href="#" src="src/backtotop.png">
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="nav_logo-container d-flex justify-content-end">
             <img class="nav-logo" src="src/logo2.jpg">
-            <span id="nevem" class="m-auto">kardos bence</span>
+            <h1 id="nevem" class="m-auto">kardos bence</h1>
         </div>
         <div class="btn-label"></div>
         <div class="d-flex ms-auto">
@@ -32,10 +31,10 @@
                 </div>
             </div>
         </div>
-        <button class="navbar-toggler navbar-button ms-auto" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler navbar-button m-auto" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
             aria-label="Toggle navigation">
-            <svg class="ham ham d-block ms-auto" viewBox="0 0 100 100" width="80"
+            <svg class="ham ham d-block m-auto" viewBox="0 0 100 100" width="30"
                 onclick="this.classList.toggle('active')">
                 <path class="line top"
                     d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
@@ -47,17 +46,15 @@
         </button>
     </nav>
     <section id="FoOldal">
-        <div class="FoOldal-bg"></div>
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container">
+            <div class="row p-5">
                 <div class="col-12">
-
                     <div class="FoOldal-header">
-                        <div id="koszontes" class="FoOldal-header-koszontes"></div>
-                        <div class="FoOldal-header-koszontes">Kardos Bence vagyok.</div>
-                        <div class="FoOldal-content">"A frontend fejlesztőknek nagy hangsúlyt kell helyezniük a dizájnra
+                        <h1 id="koszontes" class="FoOldal-header-koszontes"></h1>
+                        <h1 class="FoOldal-header-koszontes">Kardos Bence vagyok.</h1>
+                        <p class="FoOldal-content">"A frontend fejlesztőknek nagy hangsúlyt kell helyezniük a dizájnra
                             és az esztétikára. Az oldalaknak jól kell
-                            kinézniük, egyszerűeknek és könnyen átláthatóknak kell lenniük."</div>
+                            kinézniük, egyszerűeknek és könnyen átláthatóknak kell lenniük."</p>
                         <button class="btn btn-success my-5" onclick="location.href='#Projektek';">Projektek</button>
                     </div>
                 </div>
@@ -90,19 +87,19 @@
     <section id="Rolam">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <h2 class="Rolam-header">
+                <div class="col">
+                    <h2 class="Rolam-header my-5 p-5">
                         <div class="Rolam-header-prim">Rólam</div>
                         <div class="Rolam-header-sec">Itt további információkat találsz rólam és készségeimről</div>
                     </h2>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3 my-5">
-                <div class="col p-3 Rolam-left m-auto">
-                    <div class="Rolam-content-header mb-4">Ismerj Meg!</div>
-                    <div class="Rolam-content-l mt-3">
+            <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+                <div class="col p-5 Rolam-left m-auto">
+                    <h1 class="Rolam-content-header my-5">Ismerj Meg!</h1>
+                    <div class="Rolam-content-l my-2">
                         <p>Tanulmányaimat március végén fejeztem be <b>93%</b>-os
-                            eredménnyel, szeptemberben várható az
+                            eredménnyel, Június elején várható az
                             állami vizsga így junior frontend fejlesztőként, tapasztalat szerzés és fejlődés céljából
                             szeretnék
                             addig is elhelyezkedni.</p>
@@ -113,21 +110,21 @@
                             elengedhetetlenek.</p>
                         <p>Az egyik
                             legérdekesebb projektem az volt, hogy létrehoztam egy egyszerű weboldalt, amely a <b>Rick és
-                                Morty</b> című televíziós sorozat összes karakterét, epizódját és helyszínét
+                                Morty</b> című animációs sorozat összes karakterét, epizódját és helyszínét
                             megjeleníti
                             <b>AJAX</b> hívás által. A projekt
                             során számos kihívással kellett
-                            szembenéznem, de az eredmény egy igényes, hasznos és felhasználóbarát weboldal lett.
+                            szembenéznem, végül az eredmény egy igényes, hasznos és felhasználóbarát weboldal lett.
                         </p>
-                        <p>Szeretnék folyamatosan tanulni és fejlődni, és célom az, hogy valódi értéket teremtsek a
+                        <p>Szeretnék folyamatosan tanulni és fejlődni, célom az, hogy valódi értéket teremtsek a
                             frontend fejlesztés területén későbbiekben Senior fejlesztőként. <b><a
                                     href="#Projektek">Projektek</a></b> résznél megtalálhatóak korábbi munkáim.</p>
                         <div class="mt-5 text-center"><i>Köszönöm, hogy megnézted a portfóliómat!</i></div>
                     </div>
                 </div>
                 <div class="col p-3 Rolam-right m-auto">
-                    <div class="Rolam-content-header ms-auto">Készségeim:</div>
-                    <div class="Rolam-content-r">
+                    <h1 class="Rolam-content-header m-auto mb-5">Készségeim:</h1>
+                    <div class="Rolam-content-r mb-5">
                         <div class="skills">HTML</div>
                         <div class="skills">BS</div>
                         <div class="skills">CSS</div>
@@ -146,8 +143,8 @@
         </div>
     </section>
     <section id="Projektek">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-1 g-1 g-lg-1 my-5">
+        <div class="container-sm">
+            <div class="row my-5 p-5">
                 <div class="col">
                     <h2 class="Projektek-header">
                         <div class="Projektek-header-prim">Projektek</div>
@@ -155,114 +152,135 @@
                     </h2>
                 </div>
             </div>
-            <div class="Projekt row row-cols-1 row-cols-lg-3 g-2 g-lg-3 my-5">
-                <div class="Projekt-Img my-auto text-center">
-                    <a href="https://kardosbence.github.io/Rick-Morty/" target="_blank"><img class="img-fluid"
-                            src="./src/RickAndMortyImg.png" alt="Rick_And_Morty_Img"></a>
+            <div class="Projekt row row-cols-1 row-cols-lg-2 g-2 g-lg-2 my-5 p-5">
+                <div class="col">
+                    <div class="Projekt-Img my-auto text-center">
+                        <a href="https://kardosbence.github.io/Rick-Morty/" target="_blank"><img class="img-fluid"
+                                src="./src/RickAndMortyImg.png" alt="Rick_And_Morty_Img"></a>
+                    </div>
                 </div>
-                <div class="Projekt-Leiras ms-auto">
-                    <h2 class="m-auto">
-                        <div class="Projekt-Header my-3">Rick & Morty</div>
-                        <div class="Projekt-Content my-4 lh-base">
-                            <p>A "Rick and Morty" című animációs sorozatot mutatja be. Az oldal egy áttekintést ad a
-                                sorozat
-                                főbb karaktereiről, epizódjairól és helyszíneiről.</p>
+                <div class="col">
+                    <div class="Projekt-Leiras ms-auto p-5">
+                        <h2 class="m-auto">
+                            <div class="Projekt-Header my-3">Rick & Morty</div>
+                            <div class="Projekt-Content my-4 lh-base">
+                                <p>A "Rick and Morty" című animációs sorozatot mutatja be. Az oldal egy áttekintést ad a
+                                    sorozat
+                                    főbb karaktereiről, epizódjairól és helyszíneiről.</p>
 
-                            <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és <b>JavaScript</b>
-                                nyelveket használtam. Az
-                                adatok
-                                <b>AJAX hívás</b>-on keresztül érkeznek az oldalra, a weboldal aszinkron módon
-                                kommunikál a
-                                szerverrel.
-                                A weboldal interaktív és modern megjelenést mutat, amely könnyen navigálható és
-                                áttekinthető.
-                            </p>
+                                <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és
+                                    <b>JavaScript</b>
+                                    nyelveket használtam. Az
+                                    adatok
+                                    <b>AJAX hívás</b>-on keresztül érkeznek az oldalra, a weboldal aszinkron módon
+                                    kommunikál a
+                                    szerverrel.
+                                    A weboldal interaktív és modern megjelenést mutat, amely könnyen navigálható és
+                                    áttekinthető.
+                                </p>
 
-                            <p>Az oldal főbb tartalmai között szerepelnek az animációs sorozat főbb karakterei, a
-                                karakterek rövid leírása, az epizódok listája és azok rövid összefoglalói, valamint azok
-                                helyszínei. Az oldal a sorozat kedvelői számára készült, akik további információkat
-                                szeretnének megtudni a sorozatról, valamint új nézőknek is segítséget nyújt az
-                                induláshoz.</p>
-                        </div>
-                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
-                            onclick="window.open('https://kardosbence.github.io/Rick-Morty/', '_blank')" type="button">
-                            Megnézem</div>
-                    </h2>
+                                <p>Az oldal főbb tartalmai között szerepelnek az animációs sorozat főbb karakterei, a
+                                    karakterek rövid leírása, az epizódok listája és azok rövid összefoglalói, valamint
+                                    azok
+                                    helyszínei. Az oldal a sorozat kedvelői számára készült, akik további információkat
+                                    szeretnének megtudni a sorozatról, valamint új nézőknek is segítséget nyújt az
+                                    induláshoz.</p>
+                            </div>
+                            <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
+                                onclick="window.open('https://kardosbence.github.io/Rick-Morty/', '_blank')"
+                                type="button">
+                                Megnézem</div>
+                        </h2>
+                    </div>
                 </div>
             </div>
             <hr class="border border-dark border-3 opacity-25 my-5">
-            <div class="Projekt row row-cols-1 row-cols-lg-3 g-2 g-lg-3 my-5">
-                <div class="Projekt-Img my-auto text-center">
-                    <a href="https://kardosbence.github.io/Login-Register/" target="_blank"><img class="img-fluid"
-                            src="./src/Login-Register.png" alt="Login_Register_Img"></a>
+            <div class="Projekt row row-cols-1 row-cols-lg-2 g-2 g-lg-2 my-5 p-5 m-auto">
+                <div class="col">
+                    <div class="Projekt-Img my-auto text-center">
+                        <a href="https://kardosbence.github.io/Login-Register/" target="_blank"><img class="img-fluid"
+                                src="./src/Login-Register.png" alt="Login_Register_Img"></a>
+                    </div>
                 </div>
-                <div class="Projekt-Leiras ms-auto">
-                    <h2 class="m-auto">
-                        <div class="Projekt-Header my-3">Log-in | Register</div>
-                        <div class="Projekt-Content my-4 lh-base">
-                            <p>Egy fiktív cég bejelentkező és regisztrációs űrlapját tartalmazó weboldal.</p>
+                <div class="col">
+                    <div class="Projekt-Leiras ms-auto p-5">
+                        <h2 class="m-auto">
+                            <div class="Projekt-Header my-3">Log-in | Register</div>
+                            <div class="Projekt-Content my-4 lh-base">
+                                <p>Egy fiktív cég bejelentkező és regisztrációs űrlapját tartalmazó weboldal.</p>
 
-                            <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és <b>JavaScript</b>
-                                nyelveket használtam. Az oldalon lévő űrlapok beviteli mezőinek validációja a saját
-                                JavaScript kód segítségével
-                                történik. A kód ellenőrzi <b>REGEX</b> segítségével, hogy az összes szükséges mezőt
-                                kitöltötték-e, valamint
-                                ellenőrzi, hogy az email cím megfelelő formátumú-e. Ha bármelyik mező érvénytelen, akkor
-                                megjelenik egy hibaüzenet.</p>
-                            <p class="text-center">Az oldal felépítése egyszerű, a felhasználói felület
-                                minimalista.</p>
-                            <ul>
-                                <li>
-                                    A HTML kódban találhatók a form elemek, az űrlapok, az
-                                    űrlap beviteli mezői és a gombok.
-                                </li>
-                                <li>
-                                    A CSS kód felelős az elrendezésért és a stílusért,
-                                    beleértve a háttérképet, a betűtípust és a színösszeállításokat.
-                                </li>
-                                <li>
-                                    A JavaScript kód a
-                                    validációért és az űrlap adatok szervernek való továbbításáért felelős.
-                                </li>
-                            </ul>
+                                <p>Az oldal elkészítéséhez <b>HTML</b>, <b>CSS</b>, <b>Bootstrap</b> és
+                                    <b>JavaScript</b>
+                                    nyelveket használtam. Az oldalon lévő űrlapok beviteli mezőinek validációja a saját
+                                    JavaScript kód segítségével
+                                    történik. A kód ellenőrzi <b>REGEX</b> segítségével, hogy az összes szükséges mezőt
+                                    kitöltötték-e, valamint
+                                    ellenőrzi, hogy az email cím megfelelő formátumú-e. Ha bármelyik mező érvénytelen,
+                                    akkor
+                                    megjelenik egy hibaüzenet.
+                                </p>
+                                <p class="text-center">Az oldal felépítése egyszerű, a felhasználói felület
+                                    minimalista.</p>
+                                <ul>
+                                    <li>
+                                        A HTML kódban találhatók a form elemek, az űrlapok, az
+                                        űrlap beviteli mezői és a gombok.
+                                    </li>
+                                    <li>
+                                        A CSS kód felelős az elrendezésért és a stílusért,
+                                        beleértve a háttérképet, a betűtípust és a színösszeállításokat.
+                                    </li>
+                                    <li>
+                                        A JavaScript kód a
+                                        validációért és az űrlap adatok szervernek való továbbításáért felelős.
+                                    </li>
+                                </ul>
 
-                            <p>Összességében egy egyszerű, ám funkcionális weboldal, amely bemutatja a HTML, CSS és
-                                JavaScript használatát egy egyszerű űrlap készítése során.</p>
-                        </div>
-                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
-                            onclick="window.open('https://kardosbence.github.io/Login-Register/', '_blank')"
-                            type="button">
-                            Megnézem</div>
-                    </h2>
+                                <p>Összességében egy egyszerű, ám funkcionális weboldal, amely bemutatja a HTML, CSS és
+                                    JavaScript használatát egy egyszerű űrlap készítése során.</p>
+                            </div>
+                            <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
+                                onclick="window.open('https://kardosbence.github.io/Login-Register/', '_blank')"
+                                type="button">
+                                Megnézem</div>
+                        </h2>
+                    </div>
                 </div>
             </div>
             <hr class="border border-dark border-3 opacity-25 my-5">
-            <div class="Projekt row row-cols-1 row-cols-lg-3 g-2 g-lg-3 my-5">
-                <div class="Projekt-Img my-auto text-center">
-                    <a href="https://kardosbence.github.io/Html_CSS_Bootstrap_modulz-r-/" target="_blank"><img
-                            class="img-fluid" src="./src/Modulzáró.png" alt="Modulzáró"></a>
+            <div class="Projekt row row-cols-1 row-cols-lg-2 g-2 g-lg-2 my-5 p-5">
+                <div class="col">
+                    <div class="Projekt-Img my-auto text-center">
+                        <a href="https://kardosbence.github.io/Html_CSS_Bootstrap_modulz-r-/" target="_blank"><img
+                                class="img-fluid" src="./src/Modulzáró.png" alt="Modulzáró"></a>
+                    </div>
                 </div>
-                <div class="Projekt-Leiras ms-auto">
-                    <h2 class="m-auto">
-                        <div class="Projekt-Header my-3">HTML, CSS és Bootstrap modulzáró</div>
-                        <div class="Projekt-Content my-4 lh-base">
-                            <p>A weboldal az iskolai modulzáróra készült, <b>HTML, CSS és Bootstrap</b> webfejlesztői
-                                technológiákat használtam az elkészítéshez. Az oldal tartalma egy menüsor, amely
-                                lehetővé teszi a felhasználók számára, hogy könnyen navigáljanak az oldalon.</p>
-                            <p>Az oldal kinézete letisztult és modern, az elemek jól elrendezettek, ami segíti a
-                                felhasználókat a navigációban. Sikerült jól alkalmaznom a Bootstrap keretrendszert, ami
-                                lehetővé tette, hogy könnyen és gyorsan létrehozzam az oldal megjelenését és
-                                responszivitását.</p>
-                            <p>Összességében elégedett vagyok az elkészült oldallal, mert egyszerű, de hatékony
-                                megjelenéssel
-                                rendelkezik, és jól mutatja a Bootstrap keretrendszer előnyeit, illetve a webfejlesztői
-                                technológiák használatának fontosságát.</p>
-                        </div>
-                        <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
-                            onclick="window.open('https://kardosbence.github.io/Html_CSS_Bootstrap_modulz-r-/', '_blank')"
-                            type="button">
-                            Megnézem</div>
-                    </h2>
+                <div class="col">
+                    <div class="Projekt-Leiras ms-auto p-5">
+                        <h2 class="m-auto">
+                            <div class="Projekt-Header my-3">HTML, CSS és Bootstrap modulzáró</div>
+                            <div class="Projekt-Content my-4 lh-base">
+                                <p>A weboldal az iskolai modulzáróra készült, <b>HTML, CSS és Bootstrap</b>
+                                    webfejlesztői
+                                    technológiákat használtam az elkészítéshez. Az oldal tartalma egy menüsor, amely
+                                    lehetővé teszi a felhasználók számára, hogy könnyen navigáljanak az oldalon.</p>
+                                <p>Az oldal kinézete letisztult és modern, az elemek jól elrendezettek, ami segíti a
+                                    felhasználókat a navigációban. Sikerült jól alkalmaznom a Bootstrap keretrendszert,
+                                    ami
+                                    lehetővé tette, hogy könnyen és gyorsan létrehozzam az oldal megjelenését és
+                                    responszivitását.</p>
+                                <p>Összességében elégedett vagyok az elkészült oldallal, mert egyszerű, de hatékony
+                                    megjelenéssel
+                                    rendelkezik, és jól mutatja a Bootstrap keretrendszer előnyeit, illetve a
+                                    webfejlesztői
+                                    technológiák használatának fontosságát.</p>
+                            </div>
+                            <div id="Projekt-Btn" class="btn btn-dark mx-auto mt-5 d-block"
+                                onclick="window.open('https://kardosbence.github.io/Html_CSS_Bootstrap_modulz-r-/', '_blank')"
+                                type="button">
+                                Megnézem</div>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -270,40 +288,40 @@
     <section id="Kapcsolat">
         <div class="container">
             <div class="row">
-                <div class="col-12 m-auto mb-5 text-center">
+                <div class="col m-auto mb-5 text-center">
                     <h2 class="Kapcsolat-header ">
                         <div class="Kapcsolat-header-prim mb-5">Elérhetőségek</div>
                     </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="table-responsive col-md-auto m-auto">
-                    <table class="table table-striped table-hover text-center">
-                        <thead class="table-dark">
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="py-4">Email:</th>
-                                <td class="m-auto"><a class="form-control-plaintext" href="mailto:kardbence@gmail.com"
-                                        id="email">kardbence@gmail.com</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="py-4">Telefon:</th>
-                                <td>
-                                    <a class="form-control-plaintext" href="tel:+36302728033"
-                                        id="tel">+36-30-272-8033</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="py-4" colspan="2">Tartózkodási hely:</th>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.083041012115!2d19.074896055798206!3d47.432469300000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e7f7b7e69b21%3A0xbb39da3abd3761e6!2zQnVkYXBlc3QsIMOBcnDDoWQgdS4gOCwgMTIxNQ!5e0!3m2!1shu!2shu!4v1681226616220!5m2!1shu!2shu"
-                        class="my-5 w-100" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+            <div class="row p-5">
+                <div class="col">
+                    <div class="table-responsive col-md-auto m-auto">
+                        <table class="table table-striped table-hover text-center">
+                            <tbody>
+                                <tr>
+                                    <th class="py-4">Email:</th>
+                                    <td class="m-auto"><a class="form-control-plaintext"
+                                            href="mailto:kardbence@gmail.com" id="email">kardbence@gmail.com</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="py-4">Telefon:</th>
+                                    <td>
+                                        <a class="form-control-plaintext" href="tel:+36302728033"
+                                            id="tel">+36-30-272-8033</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="py-4" colspan="2">Tartózkodási hely:</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.083041012115!2d19.074896055798206!3d47.432469300000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741e7f7b7e69b21%3A0xbb39da3abd3761e6!2zQnVkYXBlc3QsIMOBcnDDoWQgdS4gOCwgMTIxNQ!5e0!3m2!1shu!2shu!4v1681226616220!5m2!1shu!2shu"
+                            class="my-5 w-100" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,10 +330,10 @@
 
     <footer class="container-fluid FoOldal-footer">
         <div class="container">
-            <div class="FoOldal-footer-felso row my-5">
+            <div class="FoOldal-footer-felso row mb-5">
                 <div class="FoOldal-footer-bal col-lg-4 my-5">
                     <h2 class="FoOldal-footer__header my-5">Kardos Bence</h2>
-    
+
                     <p class="FoOldal-footer__rovid-leiras text-wrap">
                         "A frontend fejlesztők számára a felhasználói élmény prioritást élvez. A cél az, hogy az oldalak
                         könnyen

@@ -4,23 +4,32 @@
 /*FontokEnd*/
 /*GombokStart*/
 #back-to-top {
-    display: none; /* A gomb alapértelmezetten rejtve van */
-    position: fixed; /* Az ablak tartalmához képest rögzített pozíció */
-    bottom: 20px; /* A gomb távolsága az ablak aljától */
-    right: 20px; /* A gomb távolsága az ablak jobb szélétől */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     margin: 0px 12px;
     border: none;
     cursor: pointer;
-    z-index: 999; /* Biztosítja, hogy a gomb az összes más elem felett legyen */
-    transition: opacity 0.3s ease-in-out; /* A gomb áttűnése animálva történik */
+    z-index: 999;
+    /* Biztosítja, hogy a gomb az összes más elem felett legyen */
+    transition: opacity 0.3s ease-in-out;
+    /* A gomb áttűnése animálva történik */
     width: 80px;
     background-color: rgba(128, 128, 128, 0.400);
     border-radius: 50px;
-  }
-  
-  #back-to-top:hover {
-    opacity: 0.4; /* A gomb átlátszatlansága a kurzor fölé kerülve */
-  }
+}
+
+@media only screen and (max-width: 56.25em) {
+    #back-to-top {
+        width: 60px;
+    }
+}
+
+#back-to-top:hover {
+    opacity: 0.4;
+    /* A gomb átlátszatlansága a kurzor fölé kerülve */
+}
 
 .btn {
     text-transform: uppercase;
@@ -34,32 +43,30 @@
 
 /*GombokEnd*/
 /*@MediaBeállításokStart*/
+
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth
+    font-size: 65%;
+    scroll-behavior: smooth;
 }
+
 @media only screen and (max-width: 75em) {
     html {
-        font-size:59%
+        font-size: 55%;
     }
 }
 
 @media only screen and (max-width: 56.25em) {
     html {
-        font-size:56%
+        font-size: 50%;
     }
 }
 
 @media only screen and (min-width: 112.5em) {
     html {
-        font-size:65%
+        font-size: 60%;
     }
 }
-@media only screen and (max-width: 37.5em) {
-    .FoOldal-header-koszontes {
-        font-size:4.5rem
-    }
-}
+
 /*@MediaBeállításokEnd*/
 
 /*OldalBeállításokEnd*/
@@ -69,7 +76,6 @@ html {
     font-size: 1.6rem;
     background-color: white;
     box-shadow: 1px 1px 100px 20px rgb(160, 160, 160);
-    font-family: 'Alkatra', cursive;
 }
 
 .ham {
@@ -141,11 +147,25 @@ html {
     letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    #nevem {
+        font-size: 1.3rem
+    }
+}
+
 .nav-link {
+    font-size: 1.6rem;
     margin-inline: 30px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .nav-link {
+        padding: 1.2rem;
+        font-size: 1.3rem;
+    }
 }
 
 nav a.active {
@@ -181,37 +201,33 @@ nav a.active {
 /*NavbarEnd*/
 
 /*FőoldalStart*/
-
-.FoOldal-bg {
-    background-image: url("src/bg2.png");
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    width: 1px fit-content;
-    height: 1000px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #FoOldal {
+    position: relative;
     cursor: default;
-    word-spacing: 0px;
+    word-spacing: 1px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.200);
     box-shadow: 1px 1px 50px 20px rgb(168, 168, 168);
+    padding-bottom: 18%;
+}
+
+#FoOldal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./src/bg2.png");
+    transform: scaleX(-1);
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    z-index: -1;
 }
 
 .FoOldal-header {
-    /*background-color: rgba(0, 0, 0, 0.3);
-    color: rgb(59, 59, 59);
-    border: 3px solid #666666;
-    border-radius: 10px;*/
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    padding: 20px;
+    cursor: default;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -222,11 +238,23 @@ nav a.active {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-header-koszontes {
+        font-size: 3rem;
+    }
+}
+
 .FoOldal-content {
     font-size: 2.2rem;
     margin-top: 50px;
     letter-spacing: 3px;
     text-transform: capitalize;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-content {
+        font-size: 1.5rem
+    }
 }
 
 .FoOldal-oldalSoc {
@@ -288,7 +316,7 @@ nav a.active {
 
 .Rolam-header {
     cursor: default;
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -299,12 +327,33 @@ nav a.active {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .Rolam-header-prim {
+        font-size: 2.5rem
+    }
+}
+
 .Rolam-header-sec {
     font-size: 2rem;
-    margin-top: 50px;
     letter-spacing: 3.8px;
     text-transform: capitalize;
     word-spacing: 0px;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Rolam-header-sec {
+        font-size: 1.5rem
+    }
+}
+
+.Rolam-content-header {
+    font-size: 2.8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Rolam-content-header {
+        font-size: 2rem
+    }
 }
 
 .Rolam-left {
@@ -315,8 +364,11 @@ nav a.active {
     font-size: 1.8rem;
     text-align: justify;
 }
-.Rolam-content-header {
-    font-size: 2.8rem;
+
+@media only screen and (max-width: 37.5em) {
+    .Rolam-content-l {
+        font-size: 1.5rem
+    }
 }
 
 .Rolam-content-l a {
@@ -345,16 +397,22 @@ nav a.active {
 }
 
 .skills {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     cursor: default;
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 2rem;
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+    margin-right: 2.4rem;
     background: rgb(153, 153, 153, .2);
     box-shadow: 0px 4px 1px 5px rgb(134, 134, 134);
     border-radius: 5px;
     font-weight: 700;
     color: #666;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .skills {
+        font-size: 1rem
+    }
 }
 
 .skills:hover {
@@ -402,7 +460,7 @@ nav a.active {
 
 .Projektek-header {
     cursor: default;
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -413,12 +471,24 @@ nav a.active {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .Projektek-header-prim {
+        font-size: 2.5rem
+    }
+}
+
 .Projektek-header-sec {
     font-size: 2rem;
     margin-top: 50px;
     letter-spacing: 3.8px;
     text-transform: capitalize;
     word-spacing: 0px;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Projektek-header-sec {
+        font-size: 1.5rem
+    }
 }
 
 .Projekt-Leiras {
@@ -436,9 +506,21 @@ nav a.active {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .Projekt-Content {
+        font-size: 1.5rem;
+    }
+}
+
 .Projekt-Content {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: justify;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Projekt-Content {
+        font-size: 1.5rem;
+    }
 }
 
 .Projekt-Content p {
@@ -446,16 +528,23 @@ nav a.active {
 }
 
 .Projekt-Img {
-    /* Az alap stílusok */
     border-radius: 100px;
     transition: all 1s ease-in-out;
 }
 
 .Projekt-Img:hover {
-    width: 40%;
+    transform: scale(1.01) translate(-5%);
     background-color: rgba(128, 128, 128, 0.5);
     border-radius: 100px;
     box-shadow: 20px 20px 20px 20px black;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Projekt-Img:hover {
+        transform: scale(1.05);
+        box-shadow: none;
+        background-color: rgba(128, 128, 128, 0);
+    }
 }
 
 /*ProjektekEnd*/
@@ -466,13 +555,30 @@ nav a.active {
     background-color: #f1f1f1;
     cursor: default;
     word-spacing: 1px;
-
 }
 
 .Kapcsolat-header {
+    margin-top: 100px;
+}
+
+.Kapcsolat-header-prim {
     font-size: 4rem;
-    cursor: default;
-    margin-top: 150px;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .Kapcsolat-header-prim {
+        font-size: 2.5rem;
+    }
+}
+
+#Kapcsolat table {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+    #Kapcsolat table {
+        font-size: 1.5rem;
+    }
 }
 
 /*KapcsolatEnd*/
@@ -484,15 +590,36 @@ nav a.active {
 }
 
 .FoOldal-footer__header {
+    font-size: 4rem;
     margin-left: 30px;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-footer__header {
+        font-size: 2.5rem;
+    }
 }
 
 .FoOldal-footer__rovid-leiras {
+    font-size: 1.5rem;
     margin-left: 30px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-footer__rovid-leiras {
+        font-size: 1.5rem;
+    }
+}
+
 .FoOldal-footer-also {
+    font-size: 1.5rem;
     display: inline;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .FoOldal-footer-also {
+        font-size: 1.5rem;
+    }
 }
 
 .FoOldal-footer-jobb {
