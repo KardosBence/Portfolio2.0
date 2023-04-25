@@ -589,9 +589,8 @@ nav a.active {
     background-color: black;
 }
 
-.FoOldal-footer__header {
+.FoOldal-footer_header {
     font-size: 4rem;
-    margin-left: 30px;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -602,7 +601,6 @@ nav a.active {
 
 .FoOldal-footer__rovid-leiras {
     font-size: 1.5rem;
-    margin-left: 30px;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -632,7 +630,7 @@ nav a.active {
 
 .FoOldal-footer__icon {
     width: 40px;
-    margin-inline: 15px;
+    margin-inline: 20px;
     border-radius: 5%;
 }
 
